@@ -170,6 +170,14 @@ After the filtering processus that I will describe in the next paragraph, we fou
  \end{figure}
 
 To automatically include new entries, we created a pipline of filters based on name, SMILES and structure comparisons (see figure \ref{fig:quality}).
+Before all the filtering tasks, we only extract molecules that are already annotated as NRP in the databases.
+First, we filter by names and known synonymes to avoid duplicates entries (fast and easy task).
+Then, we try to avoid duplicates using a string comparison of SMILES.
+For this task, we use the CDK library[TODO] to get a canonical SMILES from each candidate entry (multiple SMILES can represent a single molecule; a canonical SMILES is always the same for one molecule).
+Those canonical SMILES are used to compare the candidate entry to all the SMILES already present in the database (the canonization is time consuming but the string comparison is fast).
+Finally, for the molecules not filtered, we compute and compare the monomeric graph with monomeric graphs present in Norine.
+For this task, we use s2m to generate the monomeric graphs and a simple algorithm of graph isomorphism to compare the graph against the database (the most time consuming task).
+
 
 
 
