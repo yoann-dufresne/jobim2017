@@ -178,10 +178,23 @@ Those canonical SMILES are used to compare the candidate entry to all the SMILES
 Finally, for the molecules not filtered, we compute and compare the monomeric graph with monomeric graphs present in Norine.
 For this task, we use s2m to generate the monomeric graphs and a simple algorithm of graph isomorphism to compare the graph against the database (the most time consuming task).
 
-
+After the execution of these scripts, the database was filled with 472 new peptide annotations.
+Those data represent an increase of 30\% of the entries in the Norine database for a new total of 1658 NRP annotated.
+For the data that where already present in Norine, we are currently looking at the similarities and differences between our annotation and the other databases ones to select the best combination of the two.
 
 
 \section{Conclusion and perspectives}
+
+On this article we presented an update of the data from the knowledge base Norine.
+Using tools like smiles2monomers, we detected a few errors in the annotations.
+We correct them and created safeguards to avoid errors in futur user submissions.
+In a second time, we used multiple tools to retrieve and filters many possible new NRP entries in the database.
+The work on automatic filing scripts led us to a data increase of 30\% for a new amount of 1658 annotations in Norine.
+So, in the coming release of Norine we strongly improve the data quantity and quality available for all.
+
+We also noticed that many data are still not present in the database.
+For example, we manually noticed that some entries in the PubChem database are NRP undercover (without the NRP annotation).
+We that soon we will be able to screen the entire PubChem database and automatically relate them with proof of their NRP origins.
 
 
 
