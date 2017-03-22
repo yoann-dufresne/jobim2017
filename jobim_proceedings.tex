@@ -94,7 +94,7 @@ In few words, huge enzymes called NRP synthetases select specific amino acids, v
  \end{figure}
 
 
-The Norine database is the reference NRP knowledge base, containing more than 1500 peptides composed of almost 600 different monomers (different building blocks including amino acids).
+The Norine database is the reference NRP knowledge base, containing more than 1600 peptides composed of almost 600 different monomers (different building blocks including amino acids).
 In the database, each NRP referenced have a dedicated web page with a lot of informations about their provenance, their composition and their pharmaceutical properties.
 The most important information is their monomeric structure/composition (see figure \ref{fig:malformin}, on the left).
 The monomeric representation, that we also called the biological structure, correspond to the nearest representation of the NRP assembly process.
@@ -157,6 +157,20 @@ These bacterias are known as producers of NRP and that's why we explored this da
 Until now, the Norine database is well known for the quality of the manual annotations included.
 So, we did not want to add wrong informations from an automatic filling of the database and that's why we created a strict validation pipline for the potential new entries.
 After the filtering processus that I will describe in the next paragraph, we found 472 unreferenced NRP in Norine: 235 from MIBiG, 162 from BIRD and 75 from StreptomeDB.
+
+ \begin{figure}
+   \begin{center}
+     % if you have pdflatex installed, you can use pdf files as graphics
+     \includegraphics[width=400px]{figs/filters.jpg}
+     % On the other hand, you must use eps files
+     % \includegraphics[height=4cm,width=6cm]{figs/fig1.eps}
+   \end{center}
+   \caption{Automatic filing quality control.}
+   \label{fig:quality}
+ \end{figure}
+
+To automatically include new entries, we created a pipline of filters based on name, SMILES and structure comparisons (see figure \ref{fig:quality}).
+
 
 
 \section{Conclusion and perspectives}
