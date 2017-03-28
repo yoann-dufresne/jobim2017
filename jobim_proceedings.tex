@@ -171,7 +171,7 @@ After the filtering process that I will describe in the next paragraph, we found
  \end{figure}
 
 To automatically include new entries, we created a pipeline of filters based on name, SMILES and structure comparisons (see figure \ref{fig:quality}).
-Before all the filtering tasks, we only extract molecules that are already annotated as NRP in the databases.
+%Before all the filtering tasks, we only extract molecules that are already annotated as NRP in the databases.
 First, we filter by names and known synonyms to avoid duplicated entries (fast and easy task).
 Then, we try to avoid duplicates using a string comparison of SMILES.
 For this task, we use the CDK library~\cite{steinbeck_chemistry_2003} to get a canonical SMILES from each candidate entry (multiple SMILES can represent a single molecule; a canonical SMILES is always the same for one molecule).
