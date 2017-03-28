@@ -81,7 +81,7 @@ Among others, NRPs can act as antibiotics (penicillin -NOR00006-, daptomycin -NO
 In addition to their primary activity, some NRPs are also successfully prescribed for treating cancers (actinomycin D -NOR00228-) or reducing transplant rejection (cyclosporin A -NOR00033-).
 Beyond the pharmacology, NRPs promise other advantageous applications such as biocontrol of plant diseases, bioremediation of areas contaminated with toxic metals and/or non-biodegradable organic compounds.
 These metabolites are produced by a specific biosynthetic pathway.
-In few words, huge enzymes called NRP synthetases select specific amino acids, variant amino acids, lipids (and many other) and assemble them.
+In few words, huge enzymes called NRP synthetases select standard and non-standard amino acids, lipids and many other and assemble them.
 
  \begin{figure}
    \begin{center}
@@ -95,28 +95,28 @@ In few words, huge enzymes called NRP synthetases select specific amino acids, v
  \end{figure}
 
 
-The Norine database is the reference NRP knowledge base, containing more than 1200 peptides composed of almost 530 different monomers (different building blocks including amino acids).
-In the database, each NRP referenced have a dedicated web page with various informations about their provenance, their composition and their biological activities.
+The Norine database is the reference NRP knowledge base, containing more than 1200 peptides composed of almost 530 different monomers (various building blocks including amino acids).
+In the database, each referenced NRP have a dedicated web page with various informations about their provenance, their composition and their biological activities.
 The most important information is their monomeric structure/composition (see figure \ref{fig:malformin}, on the left).
 The monomeric representation, that we also called the biological structure, correspond to the nearest representation of the NRP assembly process.
 In this representation, each node correspond to a monomer that have been included during the synthesis.
 The other representation (figure \ref{fig:malformin}, on the right), is the atomic representation, obtained by reconstruction after a mass spectrum analysis.
 The knowledge of the monomeric representation is the most important information about a peptide because it is needed to fully understand the synthesis pathway.
-It as also been proved~\cite{abdo_new_2012} that, in most cases, the activity of the molecule can be predicted from this single representation.
+It has also been proved~\cite{abdo_new_2012} that, in most cases, the activity of the molecule can be predicted from this single representation.
 
 Since 2016, the Norine database is open to crowdsourcing~\cite{flissi_norine_2016}.
 External users can submit new peptides to improve the data quantity of the database.
 A complete procedure of submission and reviewing have been set up to guaranty the quality of the new annotation.
-Nevertheless, we know that many NRP discovered are not present in the Norine database and this process is not allowing a massive addition of data.
-It is also not allowing the correction of wrong data that has been entered before the set up.
+Nevertheless, we know that many NRP discovered are not present in the Norine database and this process doesn't allow a massive addition of data.
+%It is also not allowing the correction of wrong data that has been entered before the set up.
 
 In the next parts of this article we will have a quick overview of the current work on data curation and database filling.
 
 
 \section{Improving the data quality}
 
-In the Bonsai group, we developed a tool called smiles2monomers (s2m)~\cite{dufresne_smiles2monomers:_2015} that automatically creates annotations of NRP.
-From a SMILES~\cite{weininger_smiles_1988} (a textual atomic representation of a molecule), s2m infer the monomeric structure of the NRP.
+In the Bonsai group, we developed a tool called smiles2monomers (s2m)~\cite{dufresne_smiles2monomers:_2015} that automatically creates NRP annotations.
+From a SMILES~\cite{weininger_smiles_1988} (a textual atomic representation of a molecule), s2m infers the monomeric structure of the NRP.
 On one side, as we said in the introduction, the most useful information is the monomeric structure of NRP.
 On the other side, almost every NRP are characterised by mass spectrum experiments, so we often only know their atomic structure.
 So, s2m is a very powerful tool for the NRP community, making the link between both annotations.
@@ -132,10 +132,10 @@ So, s2m is a very powerful tool for the NRP community, making the link between b
    \label{fig:warnings}
  \end{figure}
 
-In the Norine database, a significant amount of NRP entries (around 30\%) are filled with both atomic and monomeric structures.
+In the Norine database, a significant amount of NRP entries (around 30\%) are annotated with both atomic and monomeric structures.
 We used s2m on the atomic structures to verify the integrity of the data and we found a few errors (50 NRPs with a wrong atomic or monomeric structure).
 To avoid the insertion of new errors, we included the s2m software in the crowdsourcing tool MyNorine.
-When a user wants to add a new compound s2m is used during two validation steps.
+When a user wants to add a new compound, s2m is used during two validation steps.
 Firstly, when the user fills the SMILES area, myNorine can automatically creates the monomeric structure (see figure \ref{fig:warnings}, on the left).
 Secondly, if the user did not explicitly generate the monomeric structure, s2m runs in background to compare the result with the manually entered structure.
 If the automatic and manual annotations are not equivalent, the MyNorine tool raises a warning to the user (see figure \ref{fig:warnings}, on the right)
@@ -154,9 +154,9 @@ This database stores information about gene clusters of secondary metabolites, i
 The second one is the Biologically Interesting Molecule Reference Dictionary (BIRD)~\cite{berman_announcing_2003}.
 This database references external resources about "interesting" molecules and we know that some of them are NRPs.
 The last database used as resource is StreptomeDB~\cite{lucas_streptomedb:_2013}, the database that reference the molecules produced by bacteria in the \textit{Streptomyces} genus.
-These bacteria are known as producers of NRP and that's why we explored this database.
+These bacteria are known as producers of NRPs, so we explored this database.
 Until now, the Norine database is well known for the quality of its manual annotations.
-So, we did not want to add wrong informations from an automatic filling of the database and that's why we created a strict validation pipeline for the potential new entries.
+So, we did not want to add wrong informations from an automatic filling of the database. For this reason, we created a strict validation pipeline for the potential new entries.
 After the filtering process that I will describe in the next paragraph, we found 472 NRPs unreferenced in Norine: 235 from MIBiG, 162 from BIRD and 75 from StreptomeDB.
 
  \begin{figure}
@@ -175,7 +175,7 @@ Before all the filtering tasks, we only extract molecules that are already annot
 First, we filter by names and known synonyms to avoid duplicated entries (fast and easy task).
 Then, we try to avoid duplicates using a string comparison of SMILES.
 For this task, we use the CDK library~\cite{steinbeck_chemistry_2003} to get a canonical SMILES from each candidate entry (multiple SMILES can represent a single molecule; a canonical SMILES is always the same for one molecule).
-Those canonical SMILES are used to compare the candidate entry to all the SMILES already present in the database (the canonization is time consuming but the string comparison is fast).
+Those canonical SMILES are used to compare the candidate entry to all the SMILES already stored in the database (the canonization is time consuming but the string comparison is fast).
 Finally, for the molecules not filtered, we compute and compare the monomeric graph with monomeric graphs stored in Norine.
 For this task, we use s2m to generate the monomeric graphs and a simple algorithm of graph isomorphism to compare the graph against the database (the most time consuming task).
 
@@ -193,9 +193,9 @@ In a second time, we used several tools to retrieve and filter many possible new
 The work on automatic filing scripts led us to a data increase of 30\% for a new total of 1658 peptides in Norine.
 So, in the coming release of Norine we strongly improve the data quantity and quality available for all.
 
-We also noticed that many data remain absent from the database.
+We also noticed that many peptides remain absent from the database.
 For example, we noticed that some entries in the PubChem database are undiscovered NRP (not associated to NRP keyword).
-We soon will be able to screen the entire PubChem database and automatically relate peptides to proof of their non-ribosomal synthesis.
+We soon will be able to screen the entire PubChem database and automatically link peptides to proof of their non-ribosomal synthesis.
 
 
 
