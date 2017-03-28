@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: jobim_proceedings.aux
+The style file: unsrt.bst
+Database file #1: jobim_proceedings.bib
+Warning--entry type for "_mibig:_????" isn't style-file defined
+--line 87 of file jobim_proceedings.bib
+Warning--empty journal in caboche_norine:_2008
+Warning--empty year in caboche_norine:_2008
+Warning--empty journal in abdo_new_2012
+Warning--empty year in abdo_new_2012
+Warning--empty journal in flissi_norine_2016
+Warning--empty year in flissi_norine_2016
+Warning--empty journal in dufresne_smiles2monomers:_2015
+Warning--empty year in dufresne_smiles2monomers:_2015
+Warning--empty journal in weininger_smiles_1988
+Warning--empty year in weininger_smiles_1988
+Warning--empty journal in berman_announcing_2003
+Warning--empty year in berman_announcing_2003
+Warning--empty journal in lucas_streptomedb:_2013
+Warning--empty year in lucas_streptomedb:_2013
+Warning--empty journal in steinbeck_chemistry_2003
+Warning--empty year in steinbeck_chemistry_2003
+You've used 9 entries,
+            1791 wiz_defined-function locations,
+            487 strings with 5275 characters,
+and the built_in function-call counts, 2374 in all, are:
+= -- 181
+> -- 142
+< -- 0
++ -- 51
+- -- 42
+* -- 221
+:= -- 377
+add.period$ -- 25
+call.type$ -- 9
+change.case$ -- 9
+chr.to.int$ -- 0
+cite$ -- 25
+duplicate$ -- 77
+empty$ -- 212
+format.name$ -- 42
+if$ -- 479
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 8
+newline$ -- 46
+num.names$ -- 8
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 32
+stack$ -- 0
+substring$ -- 211
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 16
+while$ -- 23
+width$ -- 10
+write$ -- 79
+(There were 17 warnings)

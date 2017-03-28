@@ -1,0 +1,56 @@
+\begin{thebibliography}{1}
+
+\bibitem{caboche_norine:_2008}
+Ségolène Caboche, Maude Pupin, Valérie Leclère, Arnaud Fontaine, Philippe
+  Jacques, and Gregory Kucherov.
+\newblock {NORINE}: a database of nonribosomal peptides.
+\newblock 36:D326--D331.
+
+\bibitem{abdo_new_2012}
+Ammar Abdo, Ségolène Caboche, Valérie Leclère, Philippe Jacques, and Maude
+  Pupin.
+\newblock A new fingerprint to predict nonribosomal peptides activity.
+\newblock 26(10):1187--1194.
+
+\bibitem{flissi_norine_2016}
+Areski Flissi, Yoann Dufresne, Juraj Michalik, Laurie Tonon, Stéphane Janot,
+  Laurent Noé, Philippe Jacques, Valérie Leclère, and Maude Pupin.
+\newblock Norine, the knowledgebase dedicated to non-ribosomal peptides, is now
+  open to crowdsourcing.
+\newblock 44:D1113--D1118.
+
+\bibitem{dufresne_smiles2monomers:_2015}
+Yoann Dufresne, Laurent Noé, Valérie Leclère, and Maude Pupin.
+\newblock Smiles2monomers: a link between chemical and biological structures
+  for polymers.
+\newblock 7:62.
+
+\bibitem{weininger_smiles_1988}
+David Weininger.
+\newblock {SMILES}, a chemical language and information system. 1. introduction
+  to methodology and encoding rules.
+\newblock 28(1):31--36.
+
+\bibitem{_mibig:_????}
+{MIBiG}: Minimum information about a biosynthetic gene cluster.
+
+\bibitem{berman_announcing_2003}
+Helen Berman, Kim Henrick, and Haruki Nakamura.
+\newblock Announcing the worldwide protein data bank.
+\newblock 10(12):980--980.
+
+\bibitem{lucas_streptomedb:_2013}
+Xavier Lucas, Christian Senger, Anika Erxleben, Björn~A. Grüning, Kersten
+  Döring, Johannes Mosch, Stephan Flemming, and Stefan Günther.
+\newblock {StreptomeDB}: a resource for natural compounds isolated from
+  streptomyces species.
+\newblock 41:D1130--D1136.
+
+\bibitem{steinbeck_chemistry_2003}
+Christoph Steinbeck, Yongquan Han, Stefan Kuhn, Oliver Horlacher, Edgar
+  Luttmann, and Egon Willighagen.
+\newblock The chemistry development kit ({CDK}): An open-source java library
+  for chemo- and bioinformatics.
+\newblock 43(2):493--500.
+
+\end{thebibliography}
