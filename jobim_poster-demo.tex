@@ -1,0 +1,99 @@
+\documentclass[poster, final]{jobim2017}
+% Available options are:
+% - showframe 
+% - draft
+% - final [default]
+
+\usepackage[utf8]{inputenc}
+
+% WARNING: already loaded packages:
+% - hyperref
+% - times
+% - color
+% - xspace
+% - graphicx
+% - fancyhdr
+% - fancybox
+% - indentfirst
+% - geometry
+% - babel (options english,francais) :
+%   choose the language with \selectlanguage{<language>}
+
+
+\pagestyle{empty}
+\addtolength{\parskip}{0.4\baselineskip}
+
+\title{Data updates on Norine, the reference Non-Ribosomal Peptide knowledge base}
+
+%% List of authors (separated by the macro \and).
+%% Authors can be followed by \inst{<n>} macro.
+%% The <n> parameter of the \inst macro should correspond to the <n>th institution
+%% (see macro \institute below).
+\author{Yoann \textsc{Dufresne}\inst{1} \and Juraj \textsc{Michalik}\inst{1} \and Areski \textsc{Flissi}\inst{1}
+\and Valerie \textsc{Leclère}\inst{1, 2} \and Maude \textsc{Pupin}\inst{1}}
+
+%% List of institutions (separated by the macro \and).
+\institute{
+ Équipe Bonsai, Univ. Lille, CNRS, Centrale Lille, UMR 9189 - CRIStAL - Centre de Recherche
+en Informatique Signal et Automatique de Lille, F-59000 Lille, France
+ \and
+ Équipe ProBioGEM, Univ. Lille, INRA, ISA, Univ. Artois, Univ. Littoral Côte d’Opale, EA 7394 -
+ICV - Institut Charles Viollette, F-59000 Lille, France
+}
+
+% email of the corresponding author
+\corresponding{yoann.dufresne0@gmail.com}
+
+\begin{document}
+
+ % Si vous écrivez en français, commentez la ligne suivante
+\selectlanguage{english}
+ % Si vous écrivez en francais, décommentez la ligne suivante...
+ % \selectlanguage{francais}
+
+   \maketitle
+
+ \section{The Norine database}
+ \label{sec:introduction}
+
+Norine, first released in 2006~\cite{caboche_norine:_2008}, remains the unique platform dedicated to computational analysis of non-ribosomal peptides (NRPs).
+Among others, NRPs can act as antibiotics, siderophores, surfactants or protease inhibitors.
+The Norine database is the reference NRP knowledge base, containing more than 1200 peptides composed of almost 530 different monomers (various building blocks including amino acids).
+Each referenced NRP have a dedicated web page with various informations, including the most importants, their composition and their biological activities.
+The monomeric representation, correspond to the nearest representation of the NRP assembly process.
+The other representation is the atomic representation, obtained by reconstruction after a mass spectrum analysis.
+The knowledge of the monomeric representation allow to understand the synthesis pathway.
+It has also been proved~\cite{abdo_new_2012} that, the activity of the molecule can be predicted from this representation.
+
+
+\section{Improving the data quality and quantity}
+
+We developed a tool called smiles2monomers (s2m)~\cite{dufresne_smiles2monomers:_2015} that automatically creates NRP annotations.
+From a SMILES~\cite{weininger_smiles_1988}, s2m infers the monomeric structure of the NRP.
+In Norine, a significant amount of NRP entries (around 30\%) are annotated with both structures.
+We used s2m on the atomic structures to verify the integrity of the data and we found a few errors (50 NRPs with a wrong atomic or monomeric structure).
+To avoid the insertion of new errors, we included the s2m software in the crowdsourcing tool MyNorine.
+
+We identified 3 main databases that could be sources of new NRPs for Norine: MIBiG~\cite{_mibig:_????} (store gene clusters of secondary metabolites),
+BIRD~\cite{berman_announcing_2003} (Centralisation of external resources about "interesting" molecules),
+StreptomeDB~\cite{lucas_streptomedb:_2013} (molecules produced by bacteria in the \textit{Streptomyces} genus).
+The Norine database is well known for the quality of its manual annotations.
+So, we did not want to add wrong informations from an automatic filling of the database.
+For this reason, we created a strict validation pipeline for the potential new entries.
+After the filtering process, we found 472 NRPs unreferenced in Norine: 235 from MIBiG, 162 from BIRD and 75 from StreptomeDB.
+Those data represent an increase of 30\% of the entries in the Norine database.
+
+\section{Conclusion}
+
+In this poster we present an update of the data from the knowledge base Norine.
+Using tools like smiles2monomers, we detected a few errors in the annotations.
+We corrected them and created safeguards to avoid errors in future user submissions.
+In a second time, we used several tools to retrieve and filter many possible new NRP entries in the database.
+The work on automatic filing scripts led us to a data increase of 30\%.
+So, in the coming release of Norine we strongly improve the data quantity and quality available for all.
+
+
+\bibliography{jobim_affichette-demo}
+ 
+\end{document}
+

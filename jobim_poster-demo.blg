@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: jobim_poster-demo.aux
+The style file: unsrt.bst
+Database file #1: jobim_affichette-demo.bib
+Warning--entry type for "_mibig:_????" isn't style-file defined
+--line 87 of file jobim_affichette-demo.bib
+Warning--empty journal in caboche_norine:_2008
+Warning--empty year in caboche_norine:_2008
+Warning--empty journal in abdo_new_2012
+Warning--empty year in abdo_new_2012
+Warning--empty journal in dufresne_smiles2monomers:_2015
+Warning--empty year in dufresne_smiles2monomers:_2015
+Warning--empty journal in weininger_smiles_1988
+Warning--empty year in weininger_smiles_1988
+Warning--empty journal in berman_announcing_2003
+Warning--empty year in berman_announcing_2003
+Warning--empty journal in lucas_streptomedb:_2013
+Warning--empty year in lucas_streptomedb:_2013
+You've used 7 entries,
+            1791 wiz_defined-function locations,
+            478 strings with 4751 characters,
+and the built_in function-call counts, 1720 in all, are:
+= -- 133
+> -- 93
+< -- 0
++ -- 34
+- -- 27
+* -- 154
+:= -- 270
+add.period$ -- 19
+call.type$ -- 7
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 59
+empty$ -- 161
+format.name$ -- 27
+if$ -- 350
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 6
+newline$ -- 36
+num.names$ -- 6
+pop$ -- 30
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 26
+stack$ -- 0
+substring$ -- 149
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 12
+while$ -- 17
+width$ -- 8
+write$ -- 61
+(There were 13 warnings)
